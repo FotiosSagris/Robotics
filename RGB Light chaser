@@ -1,28 +1,33 @@
+/*The goal of this program is to turn on all the different colours in an RGB LED (Red,Green,Blue and White) in a certain order.
+The main theme is a digital ouput because we are giving a value to the arduino.
+*/
 void setup() {
 
-  // initialize digital pin LED_BUILTIN as an output.
+  // We are telling the arduino that the pins below are outputs.
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(2, OUTPUT);
 }
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(13, 1);
+  digitalWrite(13, 1); // We are telling the arduino to turn on the LED associated to Pin 13 while keeping the others off
   digitalWrite(12, 0); 
-  digitalWrite(2,0);// turn the LED on (HIGH is the voltage level)
-  delay(1000);                   // wait for a second
+  digitalWrite(2,0);
+  delay(1000);      //We are telling the arduino to wait for a second             
   digitalWrite(13, 0); 
-   digitalWrite(12, 1);
-   digitalWrite(2, 0);  // turn the LED off by making the voltage LOW
+   digitalWrite(12, 1); // We are telling the arduino to turn on the LED associated to Pin 12 while keeping the others off
+   digitalWrite(2, 0);  
   delay(1000);   
-  digitalWrite(2, 1);
+  digitalWrite(2, 1); // We are telling the arduino to turn on the LED associated to Pin 2 while keeping the others off
  digitalWrite(13, 0);
  digitalWrite(12, 0);
  delay(1000);
+ // We are telling the arduino to turn on all the LEDS (Green Red and Blue) and when they all turn on, the light becomes white.
   digitalWrite(13, 1);
  digitalWrite(12, 1);
    digitalWrite(2,1);
    delay(1000);
+   // The way I have the code setup, I am telling the arduino to do the steps we just did but in reverse
   digitalWrite(2, 1);
  digitalWrite(13, 0);
  digitalWrite(12, 0);
