@@ -3,7 +3,7 @@ The main theme is a digital output because we are telling the arduino to do an a
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
+  // initialize digital pin 13 as an output.
   pinMode(13, OUTPUT);
 }
 
