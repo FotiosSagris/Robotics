@@ -1,12 +1,11 @@
-int viny = 100;
+int TimeDelay  = 100;
 
 void setup() {
 
-
-  pinMode(13, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(2, OUTPUT);
+pinMode(13, OUTPUT);
+pinMode(12, OUTPUT);
+pinMode(7, OUTPUT);
+pinMode(2, OUTPUT);
 }
 
 void loop() {
@@ -15,41 +14,41 @@ digitalWrite(13, 1);
 digitalWrite(12, 0); 
 digitalWrite(7,0);
 digitalWrite(2,0);
-delay(viny);   
+delay(TimeDelay);   
 
 digitalWrite(13, 0); 
 digitalWrite(12, 1);
 digitalWrite(7,0);
 digitalWrite(2, 0);  
-delay(viny);
+delay(TimeDelay);
    
 digitalWrite(7,1);
 digitalWrite(2, 0);
 digitalWrite(13, 0);
 digitalWrite(12, 0);
-delay(viny);
+delay(TimeDelay);
 
 digitalWrite(7,0);
 digitalWrite(13, 0);
 digitalWrite(12, 0);
 digitalWrite(2,1);
-delay(viny);
+delay(TimeDelay);
 
 digitalWrite(7,1);
 digitalWrite(2, 0);
 digitalWrite(13, 0);
 digitalWrite(12, 0);
-delay(viny);
+delay(TimeDelay);
 
 digitalWrite(13, 0); 
 digitalWrite(12, 1);
 digitalWrite(7,0);
 digitalWrite(2, 0);
-delay(viny);
+delay(TimeDelay);
     
 digitalWrite(13, 1);
 digitalWrite(12, 0); 
 digitalWrite(7,0);
 digitalWrite(2,0);
-delay(viny); 
+delay(TimeDelay); 
 }
