@@ -1,0 +1,43 @@
+	/*The goal of this program is to alternate which LED turns on
+	The main theme is a digital output because we are tellig the arduino to turn on a certain LED*/
+	int TimeDelay  = 500; // we are setting the value of the variable TimeDelay to 500 ms
+	void setup() {
+	// We are telling the arduino that these pins down below are outputs
+	pinMode(13, OUTPUT);
+	pinMode(12, OUTPUT);
+	pinMode(7, OUTPUT);
+
+	}
+	void loop() {
+	digitalWrite(13, 1);  // We are telling the arduino to turn on the LED associated with Pin 13, while keeping the others off
+	digitalWrite(12, 0); 
+	digitalWrite(7,0);
+	delay(TimeDelay);   // We are telling the arduino to have a delay of 500ms or the variable TimeDelay
+	
+  digitalWrite(13, 0); 
+	digitalWrite(12, 1); // We are telling the arduino to turn on the LED associated with Pin 12, while keeping the others off
+	digitalWrite(7,0);
+	delay(TimeDelay);
+	   
+	digitalWrite(7,1); // We are telling the arduino to turn on the LED associated with Pin 7, while keeping the others off
+	digitalWrite(13, 0);
+	digitalWrite(12, 0);
+	delay(TimeDelay);
+
+	// now I have the code setup to repeat what just happened but in reverse
+	digitalWrite(7,1);
+	digitalWrite(13, 0);
+	digitalWrite(12, 0);
+	delay(TimeDelay);
+
+	digitalWrite(13, 0); 
+	digitalWrite(12, 1);
+	digitalWrite(7,0);
+	delay(TimeDelay);
+	    
+	digitalWrite(13, 1);
+	digitalWrite(12, 0); 
+	digitalWrite(7,0);
+	delay(TimeDelay); 
+	}
+
