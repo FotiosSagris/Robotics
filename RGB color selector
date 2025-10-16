@@ -1,1 +1,23 @@
+/*The main goal of this program is to pick colours from a colour wheel and replicate the exact colors with the RGB LED.
+The main theme is an analog ouput because we are telling the arduino to put these colours in the RGB*/
 
+	void setup() {
+	pinMode(3,OUTPUT); // each pin we are setting here is for a different colour, so Pin 3 is Red
+	pinMode(6,OUTPUT); // Pin 6 is Green
+	pinMode(9,OUTPUT); // Pin 9 Blue
+	
+	}
+	void loop() {
+  // So for example on this next example, we are telling the arduino to put 74 Red, 14 Green and 9 Blue on the color wheel
+	analogWrite(3,74);
+	analogWrite(6,14);
+	analogWrite(9,9);
+	delay(1000);
+	analogWrite(3,12);
+	analogWrite(6,70);
+	analogWrite(9,26);
+	delay(1000);
+	analogWrite(3,15);
+	analogWrite(6,20);
+	analogWrite(9,67);
+delay(1000);
