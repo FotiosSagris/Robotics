@@ -1,0 +1,21 @@
+/* The goal of this program is to control an RGB LED with a pushbutton. We are either turning every light on or off
+The main theme in this program is a digital input and digital output, because we are telling the arduino to read the value of the pushbutton and with that 
+value to either turn the lights on or off*/
+
+void setup(){
+// we are setting the pins below to either inputs or outputs
+pinMode(2, INPUT);
+pinMode(8, OUTPUT);
+pinMode(12,OUTPUT);
+pinMode(13,OUTPUT);
+}
+
+void loop(){
+// we are setting the variable buttonState to equal the value of pin 2 also known as the pushbutton
+int buttonState = digitalRead(2);
+// we are telling the arduino to either turn on or turn off the LEDS depending on the push button
+digitalWrite(8, buttonState);
+digitalWrite(12, buttonState);
+digitalWrite(13, buttonState);
+
+}
