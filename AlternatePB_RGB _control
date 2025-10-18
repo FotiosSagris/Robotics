@@ -1,0 +1,21 @@
+/* The goal of this program is to have the red and green LEDS on when the pushbutton is not pressed and to have the red and blue LEDS on when the 
+pusbutton is pressed.
+The main theme of this program is Digital output, because we are telling the arduino to either turn on or off certain output pins.*/
+
+	void setup() {
+	  // We are telling the arduino that the pins below are outputs but pin 2 which is an input
+	  pinMode(13, OUTPUT); // Blue LED
+	  pinMode(12, OUTPUT); // Green LED
+	  pinMode(8, OUTPUT); // Red LED
+    pinMode(2,INPUT); // Pushbutton
+	}
+	// the loop function runs over and over again forever
+	void loop() {
+int buttonState = digitalRead(2); // we are saving the digitalRead as a variable
+
+digitalWrite(8,1); // we are telling the arduino to always keep the red pin on
+digitalWrite(12,!buttonState); /*we are telling the arduino to read the inverse of buttonState with the (!) so when the pushbutton is not pressed, 
+that the green LED turns on but when the button is pressed it should turn off.    */
+digitalWrite(13,buttonState); /*we are telling the arduino to read the pushbutton for the Blue LED, so turn on when the pushbutton is pressed and off 
+when it is not pushed*/ 
+	}
