@@ -1,4 +1,4 @@
-/*The goal of this program is to have the value of the pushbutton to 0 when it is pushed and when it is  not pushed, the value is 1
+/*The goal of this program is to have the value of the pushbutton to 0 when it is not pushed and when it is pushed, the value is 1
 The main theme is a digital input*/
 
 int pushButton = 2 ; //we are setting the variable pushButton to pin 2
