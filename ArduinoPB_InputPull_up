@@ -1,1 +1,14 @@
-
+	/*The goal of this program is to have the value of the pushbutton to 1 when it is not pushed and when it is pushed, the value is 0
+	The arduino uses the internal resistance instead of putting an actual resistor on the breadboard
+	The main theme is a digital input*/
+	int pushButton = 2; //we are setting the variable pushButton to pin 2
+	void setup(){
+	  Serial.begin(9600);
+	  pinMode(pushButton, INPUT_PULLUP); // we are setting the pushbutton as an input
+	}
+	void loop(){
+	  int buttonState = digitalRead(pushButton); //reading the pushbutton and saving it as a variable
+	  Serial.print("buttonState = "); //printing the words buttonState =
+	  Serial.println(buttonState); // prints the pushbutton value then moves on to the next line
+	  delay(1);
+}
