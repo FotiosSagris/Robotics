@@ -11,5 +11,15 @@
 	  analogWrite(3,74);
 	  analogWrite(6,14);
 	  analogWrite(9,9);
+	  delay(1000); // and to wait 1 second
+		
+	  analogWrite(3,100); // 100 Red
+	  analogWrite(6,74); // 74 Green
+	  analogWrite(9,91); // 91 Blue
 	  delay(1000);
-	   }
+
+	  analogWrite(3,12); // 12 Red
+	  analogWrite(6,89);// 89 Green
+	  analogWrite(9,14); // 14 Blue
+	  delay(1000);
+   }
