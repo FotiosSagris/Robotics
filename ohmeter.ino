@@ -1,5 +1,5 @@
 /*
-The main goal of this program is to find the resistance of an unknown resistor and display it on the Serial Monito
+The main goal of this program is to find the resistance of an unknown resistor and display it on the Serial Monitor
 The main theme of this program is analog input processing and serial data display
 */
 
