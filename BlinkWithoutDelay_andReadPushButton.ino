@@ -1,3 +1,9 @@
+/*
+The main goal of this program is to blink an LED and display the value of the pushbutton on the serial monitor at the same time. 
+Learning how to not use delay
+The main theme of this program digital input and output
+*/
+
 const int LED_PIN = 13;           // LED connected to pin 13
 const int BUTTON_PIN = 2;         // Pushbutton connected to pin 2
 const int INTERVAL = 1000;        // Blink interval in milliseconds
