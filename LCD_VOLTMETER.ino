@@ -1,3 +1,5 @@
+// The main goal of this program is to read the bitvalue, convert it into voltage and display it on the LCD display
+//Main theme is analog input processing and LCD display
 #include <LiquidCrystal.h> // including the LCD Display library
 
 // LCD pin setup
@@ -11,11 +13,11 @@ void setup() {
 void loop() {
   // Read analog input on A0
   int sensorValue = analogRead(A0);
-
   // Convert bit value to voltage
-  float voltage = sensorValue * (5.0 / 1023.0);
 
+  float voltage = sensorValue * (5.0 / 1023.0);
   // LCD Display
+  
   lcd.setCursor(0, 0); // set cursor to column 0, row 0
   // Display the bitvalue
   lcd.print("Bit: ");
